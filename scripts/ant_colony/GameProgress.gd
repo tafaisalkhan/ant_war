@@ -19,6 +19,7 @@ const MAX_UPGRADE_LEVEL := 5
 const SAVE_PATH = "user://ant_colony_progress.cfg"
 
 func _ready() -> void:
+	DisplayServer.screen_set_orientation(DisplayServer.SCREEN_SENSOR_LANDSCAPE)
 	load_progress()
 
 func load_progress() -> void:
